@@ -1,0 +1,15 @@
+{
+	"name": "com.radiants.ingameconsoleview.tmp",
+	"displayName": "IngameConsoleView-TMP",
+	"version": "1.0.0",
+	"unity": "2018.4",
+	"description": "Customizable Ingame-Console View(Using TextMeshPro)",
+	"license": "MIT",
+	"dependencies": {
+		"com.unity.textmeshpro" : "3.0.6",
+		"com.neuecc.unirx": "7.1.0",
+		"com.radiants.ingameconsolesystem": "1.1.0",
+		"com.radiants.spritescaler": "1.0.1",
+		"com.radiants.spritedigits": "1.0.1"
+	}
+}
