@@ -7,9 +7,9 @@
 	"license": "MIT",
 	"dependencies": {
 		"com.unity.textmeshpro" : "3.0.6",
-		"com.neuecc.unirx": "7.1.0",
-		"com.radiants.ingameconsolesystem": "1.1.0",
-		"com.radiants.spritescaler": "1.0.1",
-		"com.radiants.spritedigits": "1.0.1"
+		"com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+		"com.radiants.ingameconsolesystem": "https://github.com/sh-kj/Unity-IngameConsole.git",
+		"com.radiants.spritescaler": "https://github.com/sh-kj/Unity-SpriteScaler.git",
+		"com.radiants.spritedigits": "https://github.com/sh-kj/Unity-SpriteDigits.git"
 	}
 }
