@@ -36,9 +36,8 @@ namespace radiants.IngameConsole
 				.Subscribe(_log => UpdateText(_log))
 				.AddTo(Disposables);
 
-			Input.OnSubmitAsObservable()
-				.Subscribe(_ => OnSubmitInput(Input.text))
-				.AddTo(Disposables);
+			//Input.OnSubmitAsObservable is unstable so use AddListener...
+			Input.onSubmit.AddListener(OnSubmitInput);
 
 			DisplayToggleButton.OnClickAsObservable()
 				.Subscribe(_ => ToggleDisplay())
@@ -49,6 +48,7 @@ namespace radiants.IngameConsole
 		private void OnDestroy()
 		{
 			Disposables.Dispose();
+			Input.onSubmit.RemoveListener(OnSubmitInput);
 		}
 
 		private void UpdateText(List<string> logs)
@@ -67,7 +67,9 @@ namespace radiants.IngameConsole
 		{
 			Console.Log(input);
 			Input.text = "";
-			Console.ExecuteCommand(input.Split(' '));
+
+			if(!string.IsNullOrEmpty(input))
+				Console.ExecuteCommand(input.Split(' '));
 		}
 
 		private void ToggleDisplay()
