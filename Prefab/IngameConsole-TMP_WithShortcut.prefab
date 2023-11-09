@@ -903,8 +903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 0, y: -60}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7620298191269045881
 GameObject:
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   _SortingLayerID:
     value: 0
   _OrderInLayer:
-    value: 0
+    value: 110
   _TargetRenderer: {fileID: 0}
   _TargetTransform: {fileID: 0}
 --- !u!1 &7620298192181916586
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   _SortingLayerID:
     value: 0
   _OrderInLayer:
-    value: 1
+    value: 120
   _CustomMaterial:
     value: {fileID: 0}
   _Size:
